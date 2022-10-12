@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+.navbar {
+    display: flex;
+    height: 40px;
+    background-color: black;
+    opacity: 0.5;
+    position: absolute;
+    width: 100%;
+  }
+  
+  /* LOGO */
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10.8px 20px;
+    font-weight: bold;
+  }
+  .logo-text a{
+      text-decoration: none;
+      color: white;
+  }
+  #logo-1 a{
+    color: red;
+  }
+  #logo-2 a{
+    color: rgb(255, 255, 255);
+  }
+  .logo-text{
+      cursor: pointer;
+      text-decoration: none;
+      color: white;
+  }
+  
+  /* Options */
+  .middle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    font-family: 'Baloo Bhai 2', cursive;
+  }
+  .list {
+    list-style: none;
+  }
+  .list a {
+    text-decoration: none;
+    color: white;
+    padding: 2px 10px;
+    margin: 0px 25px;
+    transition: all 0.5s;
+    border-radius: 20px;
+    font-weight: bold;
+  }
+  .list a:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+  }
+  
+  /* Buttons */
+  .button{
+    padding: 2px;
+    width: 80px;
+    border: 2px solid black;
+    border-radius: 20px;
+    height: 30px;
+    cursor: pointer;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-weight: bold;
+    background-color: rgb(98, 32, 104);
+    transition: all 0.4s;
+    color: rgb(255, 255, 255);
+    margin-top: 3px;
+  }
+  .button:hover{
+    box-shadow: rgb(137, 185, 216) 0 0 10px 2px;
+  }
+  .right {
+    margin: 4.8px 2px;
+    cursor: default;
+  }
+  
+
+.body{
+    background: url("../img/universe.jpg"); 
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#scoreBox{
+    position: absolute;
+    top: 50px;
+    right: 100px;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+    background-color: aliceblue;
+    padding: 5px;
+    margin-bottom: 35px;
+    border: black solid 2px;
+}
+
+#hiscoreBox{
+    position: absolute;
+    top: 80px;
+    right: 62px;
+    font-size:24px;
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+    background-color: aliceblue;
+    padding: 5px;
+    margin-top: 30px;
+    border: black solid 2px;
+    
+}
+
+#board{
+    background: url('../img/background2.jpg');
+    background-size: 100%;
+    width: 90vmin;
+    height: 88vmin;
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(18, 1fr);
+    margin-top: 50px;
+}
+
+.head{
+    background:linear-gradient(rgb(255, 196, 0),orange)  ;
+    background-size: 100%;
+    border: 1px solid rgb(10, 5, 5); 
+    transform: scale(1.02);
+    border-radius: 20px;
+    box-shadow: rgb(253, 255, 114) 0px 0px 15px;
+}
+
+.snake{
+    background: linear-gradient(rgb(255, 255, 0),rgb(204, 159, 11));
+    background-size: 100%;
+    border: .25vmin solid rgb(17, 10, 10);
+    border-radius: 20px;
+    box-shadow: rgb(239, 241, 109) 0 0 5px;
+}
+
+.food{
+    background:url("../img/head.jpg");
+    background-size: 100%; 
+    border: .25vmin solid black;
+    border-radius: 8px;
+    border-radius: 20px;
+    box-shadow: rgb(83, 175, 218) 0 0 15px;
+}

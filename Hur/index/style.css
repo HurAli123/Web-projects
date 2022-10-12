@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/* Background */
+.background {
+  position: absolute;
+  height: 500px;
+  width: 100%;
+  background: url(images/universe.jpg) center center/cover;
+  z-index: -1;
+}
+
+/* navbar */
+.navbar {
+  display: flex;
+  height: 40px;
+  background-color: black;
+  opacity: 0.7;
+}
+
+/* LOGO */
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10.8px 20px;
+  font-weight: bold;
+}
+.logo-text a {
+  text-decoration: none;
+  color: white;
+}
+#logo-1 a {
+  color: red;
+}
+#logo-2 a {
+  color: rgb(255, 255, 255);
+}
+.logo-text {
+  cursor: pointer;
+  text-decoration: none;
+  color: white;
+}
+
+/* Options */
+.middle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  font-family: "Baloo Bhai 2", cursive;
+}
+.list {
+  list-style: none;
+}
+.list a {
+  text-decoration: none;
+  color: white;
+  padding: 2px 10px;
+  margin: 0px 25px;
+  transition: all 0.5s;
+  border-radius: 20px;
+  font-weight: bold;
+}
+.list a:hover {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+}
+
+/* Buttons */
+.button {
+  padding: 2px;
+  width: 80px;
+  border: 2px solid black;
+  border-radius: 20px;
+  height: 30px;
+  cursor: pointer;
+  font-family: "Baloo Bhai 2", cursive;
+  font-weight: bold;
+  background-color: rgb(98, 32, 104);
+  transition: all 0.4s;
+  color: rgb(255, 255, 255);
+  margin-top: -1px;
+}
+.button:hover {
+  box-shadow: rgb(137, 185, 216) 0 0 10px 2px;
+}
+.right {
+  margin: 4.8px 2px;
+  cursor: default;
+}
+
+/* Home */
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 14%;
+  opacity: 70%;
+  padding: 20px;
+}
+.home-text {
+  color: rgb(204, 211, 218);
+}
+.home div {
+  margin-bottom: 20px;
+}
+.home h2 {
+  margin-bottom: 15px;
+  text-align: center;
+  font-size: 40px;
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px 3px rgb(0 0 0);
+  font-family: cursive;
+  display: inline;
+}
+.home span {
+  text-align: center;
+  padding-left: 30px;
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px 3px rgb(0 0 0);
+  margin: auto;
+  font-weight: bold;
+}
+#head1 {
+  margin-right: 15px;
+}
+#head2 {
+  color: red;
+}
+/* Feature Section */
+.section{
+  background-color: rgb(241, 241, 241);
+  display: flex;
+  align-items: center;
+  height: 600px;
+  border: 2px solid black;
+  flex-direction: column;
+  margin: 20px 5px;
+  position: relative;
+  top: 20px;
+}
+.section h2{
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "Baloo Bhai 2", cursive;
+  border: 2px solid black;
+  margin-top: 20px;
+  color: white;
+  background-color: black;
+  padding: 10px;
+  border-radius: 25px;
+  opacity: 0.8;
+}
